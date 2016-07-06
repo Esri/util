@@ -293,7 +293,6 @@ while(1){
 	dest = readLine();
 	optimizeSwitch = readLine();
 	var options = eval("(" + readLine() + ")");
-	print(dest + ":");
 	var start = (new Date()).getTime(),
 		exception = "";
 	try{
@@ -304,8 +303,8 @@ while(1){
 		}
 	}catch(e){
 		exception = ". OPTIMIZER FAILED: " + e;
+		print(dest + ":" + exception);
 	}
-	print("Done (compile time:" + ((new Date()).getTime()-start)/1000 + "s)" + exception);
 }
 
 if (jscomp) {
