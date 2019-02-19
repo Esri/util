@@ -14,7 +14,7 @@ define([
 		scopeMap:[],
 		insertAbsMids:1,
 		applyDojoPragmas:1,
-		localeList:"ar,ca,cs,da,de,el,en-gb,en-us,es-es,fi-fi,fr-fr,he-il,hu,it-it,ja-jp,ko-kr,nl-nl,nb,pl,pt-br,pt-pt,ru,sk,sl,sv,th,tr,zh-tw,zh-cn".split(","),
+		localeList:"ar,bs,ca,cs,da,de,el,en-gb,en-us,es,es-es,es-mx,fi,fi-fi,fr,fr-fr,he,he-il,hi,hr,hu,id,it,it-it,ja,ja-jp,ko,ko-kr,lv,lt,nl,nl-nl,nb,pl,pt-br,pt-pt,ro,ru,sk,sl,sr,sv,th,tr,uk,vi,zh-tw,zh-cn,zh-hk".split(","),
 
 
 		// this is a dojo pragma
