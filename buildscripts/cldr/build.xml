@@ -15,7 +15,7 @@
 	<property name="json" location="${root}/dojo/cldr/nls"/>
 
 	<!-- Arbitrary defaults. locales and currencies properties can be altered or eliminated to build the entire set -->
-	<property name="locales" value="ar,bs,ca,cs,da,de,de-ch,el,en-au,en-ca,en-gb,en-us,es,es-mx,et,fi,fr,fr-ch,he,hi,hr,hu,id,it,it-ch,ja,ko,lt,lv,nl,nb,pl,pt,pt-br,pt-pt,ro,ru,sl,sr,sv,th,tr,uk,vi,zh-cn,zh-hk,zh-tw" />
+	<property name="locales" value="ar,bs,ca,cs,da,de,de-ch,el,en-au,en-ca,en-gb,en-us,es,es-mx,et,fi,fr,fr-ch,he,hi,hr,hu,id,it,it-ch,ja,ko,lt,lv,nl,nb,pl,pt,pt-br,pt-pt,ro,ru,sk,sl,sr,sv,th,tr,uk,vi,zh-cn,zh-hk,zh-tw" />
 	<property name="currencies" value="GBP,USD,CAD,AUD,EUR,CHF,HKD,JPY,CNY" />
 
 	<target name="-check-config"
@@ -26,7 +26,7 @@
 		<available property="saxon9_ok" file="${user.home}/.ant/lib/saxon9.jar" />
 		<available property="resolver_ok" file="${user.home}/.ant/lib/resolver.jar" />
 		<available property="logger_ok" file="${user.home}/.ant/lib/commons-logging-1.1.1.jar" />
-		
+
 		<condition property="config_ok">
 			<and>
 				<isset property="bsf_ok" />
@@ -230,7 +230,7 @@ java.lang.System.out.print(contents);
 		}
 		fs.addOr(orSelector);
 	}
-		
+
 	ds = fs.getDirectoryScanner(project);
 	srcFiles = ds.getIncludedFiles();
 	var destdir = attributes.get("destdir");
